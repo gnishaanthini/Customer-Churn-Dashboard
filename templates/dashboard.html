@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/dashboard.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+       <!-- <h1>Dashboard</h1> -->
+       <button onclick=openForm()>Churn Prediction </button>
+       <h1>Dashboard</h1>
+       
+      </div>
+      <div class="form-popup" id="myForm">
+        <form name="form" method="POST" class="form-container">
+          <h1>Enter the details</h1>
+      
+          <label for="customer_id"><b>customer_id</b></label>
+          <input type="number" id="customer_id" name="customer_id" required><br>
+      
+          <label for="acc_length"><b>Account Length</b></label>
+          <input type="number" id="acc_length" step="0.01" name="acc_length" value=0 ><br>
+
+          <label for="loc_code"><b>Location_code</b></label><span></span>
+          <select name="loc_code" id="loc_code">
+            <option value="452" selected hidden>Choose here</option>
+            <option value="445">445</option>
+            <option value="452">452</option>
+            <option value="547">547</option>
+          </select><br>
+          
+          <label for="int_plan"><b>International plan</b></label><span></span>
+          <select name="int_plan" id="int_plan">
+            <option value="0" selected hidden>Choose here</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select><br>
+          
+          <label for="voice_plan"><b>Voice Mail Plan</b></label><span></span>
+          <select name="voice_plan" id="voice_plan">
+            <option value="0" selected hidden>Choose here</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select><br>
+          
+          <label for="num_msg"><b>Number_vm_messages</b></label>
+          <input type="number" id="num_msg" name="num_msg" value=0><br>
+          
+          <label for="day_min"><b>Total_day_min</b></label>
+          <input type="number" id="day_min" step="0.01" name="day_min" value=0><br>
+          
+          <label for="day_call"><b>Total_day_calls</b></label>
+          <input type="number" id="day_call" step="0.01" name="day_call" value=0><br>
+          
+          <label for="day_charge"><b>Total_day_charge</b></label>
+          <input type="number" id="day_charge" step="0.01" name="day_charge" value=0><br>
+          
+          <label for="eve_min"><b>Total_eve_min</b></label>
+          <input type="number" id="eve_min" step="0.01" name="eve_min" value=0><br>
+          
+          <label for="eve_call"><b>Total_eve_calls</b></label>
+          <input type="number" id="eve_call" step="0.01" name="eve_call" value=0><br>
+          
+          <label for="eve_charge"><b>Total_eve_charge</b></label>
+          <input type="number" id="eve_charge" step="0.01" name="eve_charge" value=0><br>
+          
+          <label for="night_min"><b>Total_night_min</b></label>
+          <input type="number" id="night_min" step="0.01" name="night_min" value=0><br>
+          
+          <label for="night_call"><b>Total_night_calls</b></label>
+          <input type="number" id="night_call" step="0.01" name="night_call" value=0><br>
+          
+          <label for="night_charge"><b>Total_night_charge</b></label>
+          <input type="number" id="night_charge" step="0.01" name="night_charge" value=0><br>
+          
+          <label for="intl_min"><b>Total_intl_min</b></label>
+          <input type="number" id="intl_min" step="0.01" name="intl_min" value=0><br>
+          
+          <label for="intl_calls"><b>Total_intl_calls</b></label>
+          <input type="number" id="intl_calls" step="0.01" name="intl_calls" value=0><br>
+          
+          <label for="intl_charge"><b>Total_intl_charge</b></label>
+          <input type="number" id="intl_charge" step="0.01" name="intl_charge" value=0><br>
+          
+          <label for="cus_call"><b>Customer service calls</b></label>
+          <input type="number" id="cus_call" name="cus_call" value=0>
+          <br><br>
+
+      
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+         
+        </form>
+      </div>
+
+      <!-- <div class="form-popup" id="myForm1">
+        <form name="form" class="form-container">
+          <h1>Enter the details</h1>
+          <button type="submit" onclick=actionForm() class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+
+      </div> -->
+      
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+
+      // function actionForm() {
+      //   closeForm();
+      //   document.getElementById("myForm1").style.display = "block";
+      // }
+
+
+      </script>
+     
+     
+      <div>
+        <iframe title="second_copy_3 - Page 1" width="100%" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiYTQ0ZWFhYzgtYjA3Yi00ZWYzLWEwZjgtYjFjYjQ5NmVmMWMxIiwidCI6ImFhYzBjNTY0LTZjNWUtNGIwNS04ZGMzLTQwODA4N2Y3N2Y3NiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+      </div>
+    
+</body>
+
+</html>

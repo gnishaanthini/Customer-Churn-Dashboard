@@ -1,0 +1,70 @@
+.topnav {
+    background-color:#32a47b ;
+    overflow: hidden;
+    
+  }
+ 
+  
+  /* Style the links inside the navigation bar */
+  .topnav button {
+    float: right;
+    color: #32a47b ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav button:hover {
+    background-color: #32a47b ;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav button.active {
+    background-color: #04AA6D;
+    color: #04AA6D;
+  }
+  /* The popup form - hidden by default */
+
+  
+.circle {
+    position: relative;
+    left: 500px;
+    top:90px;
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    border-radius: 50%;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    background: #32a47b;
+    border-color: black;
+  }
+
+  a {
+    position: relative;
+    top:20px;
+    left:10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    width:200px;
+    height:30px;
+    font-size: 20px;
+    border-color: black;
+    outline-style: solid;
+  }
+  
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .previous {
+    background-color: white;
+    color: black;
+  }
+  
